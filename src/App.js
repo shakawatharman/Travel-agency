@@ -12,6 +12,7 @@ import MyService from "./Components/MyService/MyService";
 import AuthProvider  from "./Context/AuthProvider";
 import Destination from "./Components/Destination/Destination";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
+import AddService from "./Pages/AddService/AddService";
 
 
 function App() {
@@ -43,7 +44,9 @@ function App() {
           <Route path='/myservices'>
             <MyService></MyService>
           </Route>
-          
+          <Route path='/addservice'>
+            <AddService></AddService>
+          </Route>
           <Route path='*'>
             <NotFound></NotFound>
           </Route>

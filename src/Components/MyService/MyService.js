@@ -13,7 +13,7 @@ console.log(orders)
     <div>
       <div className="container my-5">
         <div className="row">
-            <h1 className="text-center"> My Orders</h1>
+            <h1 className="text-center"> My Bookings</h1>
         <div class="col-md-12 theme-bg p-5">
                     <div class="volenteer-list bg-white rounded p-4">
                         <table class="table table-borderless">

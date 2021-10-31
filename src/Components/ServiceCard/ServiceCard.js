@@ -6,7 +6,7 @@ import "./ServiceCard.css";
 const ServiceCard = ({ service }) => {
   const history = useHistory();
 
-  const { title, desc, img, _id } = service;
+  const { title, desc, img, _id, price } = service;
 
   const handleServiceDetail = () => {
     history.push(`/bookingService/${_id}`);
@@ -24,7 +24,9 @@ const ServiceCard = ({ service }) => {
 
         <Card.Body>
           <Card.Title>{title}</Card.Title>
+         
           <Card.Text>{desc.slice(0,205)}</Card.Text>
+          <h2>{price}</h2>
         </Card.Body>
         <button
           onClick={handleServiceDetail}

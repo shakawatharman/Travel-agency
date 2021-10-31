@@ -9,7 +9,7 @@ console.log(orders)
     <div>
       <div className="container my-5">
         <div className="row">
-            <h1 className="text-center">Manage All Orders</h1>
+            <h1 className="text-center">Manage All Bookings</h1>
         <div className="col-md-12 theme-bg p-5">
                     <div className="volenteer-list bg-white rounded p-4">
                         <table className="table table-borderless">

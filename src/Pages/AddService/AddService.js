@@ -7,6 +7,7 @@ const AddService = () => {
     const dateRef = useRef()
     const descRef = useRef()
     const imgRef = useRef()
+    const priceRef = useRef()
     
     const handleSubmit = (e)=>{
         e.preventDefault();
@@ -14,9 +15,10 @@ const AddService = () => {
         const date = dateRef.current.value;
         const desc = descRef.current.value;
         const img = imgRef.current.value;
+        const price = priceRef.current.value;
 
        const event = {
-            title,date,desc,img
+            title,date,desc,img,price
         }
         console.log(event)
 
@@ -55,7 +57,11 @@ const AddService = () => {
                                 <textarea ref={descRef} placeholder="Enter description" id="textarea"></textarea>
                             </div>
                             <div className="col-md-6 mb-3">
-                                <label htmlFor="upload">Add an image</label>
+                                <label htmlFor="date">Price</label>
+                                <input ref={priceRef} type="number" id="price" placeholder="Add Price" />
+                            </div>
+                            <div className="col-md-6 mb-3">
+                                <label htmlFor="upload">Add Image URL</label>
                                
                                 <input ref={imgRef} type="text" id="upload" placeholder="Add Valid Image URL" />
                                     

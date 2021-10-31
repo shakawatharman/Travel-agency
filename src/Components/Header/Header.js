@@ -18,11 +18,12 @@ const Header = () => {
     <Nav className="ms-auto">
       <Nav.Link as={Link} className="text-dark fw-bold" to="/home">Home</Nav.Link>
       <Nav.Link as={Link} className="text-dark fw-bold" to="/destination">Explore</Nav.Link>
-      <Nav.Link as={Link} className="text-dark fw-bold" to="/manageAllOrders">Manage All Orders</Nav.Link>
+      <Nav.Link as={Link} className="text-dark fw-bold" to="/manageAllOrders">Manage All Bookings</Nav.Link>
+      <Nav.Link as={Link} className="text-dark fw-bold" to="/addservice">Add Package</Nav.Link>
       
       {user?.email ? (
                <>
-              <Nav.Link as={Link} className="text-dark fw-bold" to="/myservices">My Orders</Nav.Link>
+              <Nav.Link as={Link} className="text-dark fw-bold" to="/myservices">My Bookings</Nav.Link>
               
                 <Button  className="text-danger fw-bold" onClick={logOut} variant="light">
                   Logout
