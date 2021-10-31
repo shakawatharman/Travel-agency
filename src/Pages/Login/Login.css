@@ -1,0 +1,20 @@
+.login-area {
+	padding: 80px 30px;
+}
+.login-area button {
+	border: 1px solid #ddd;
+	background: transparent;
+	border-radius: 30px;
+	padding: 8px 60px;
+	outline: none;
+	position: relative;
+}
+.login-area button img {
+	width: 30px;
+	position: absolute;
+	left: 4px;
+	top: 5px;
+}
+.login-area button:hover {
+	background: #ddd;
+}
