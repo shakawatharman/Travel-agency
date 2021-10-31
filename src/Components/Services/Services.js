@@ -1,31 +1,29 @@
-import React, { useEffect, useState } from "react";
-import { CardGroup } from "react-bootstrap";
+import React from "react";
+import useService from "../../Hooks/useService";
 import ServiceCard from "../ServiceCard/ServiceCard";
 import "./Services.css";
 
 const Services = () => {
 
-    const [services, setServices] = useState([])
+  const [services]=useService();
 
-    useEffect(()=>{
-      fetch('http://localhost:5000/events')
-      .then(res=>res.json())
-      .then(data=>setServices(data))
-    },[])
+    
 
   return (
     <div className="container">
-      <h2>My Services</h2>
-      <CardGroup>
+      <h2 className="mb-5">Select Your Destination</h2>
 
+     
+      <div className="row">
           {
-            services.map(service=><ServiceCard
+            services.map(service=>
+            <ServiceCard
             key={service._id}
             service={service}
             ></ServiceCard>)
           }
-
-      </CardGroup>
+      </div>
+   
     </div>
   );
 };

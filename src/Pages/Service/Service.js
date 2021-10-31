@@ -19,7 +19,9 @@ const Service = () => {
                         ></ServiceDetail>
                     </div>
                     <div className="col-md-4">
-                        <BookingForm></BookingForm>
+                        <BookingForm
+                        serviceId={serviceId}
+                        ></BookingForm>
                     </div>
                 </div>
             </div>

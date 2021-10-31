@@ -1,34 +1,43 @@
-import React from 'react';
-import { Card } from 'react-bootstrap';
-import { useHistory } from 'react-router';
-import './ServiceCard.css';
+import React from "react";
+import { Card, CardGroup } from "react-bootstrap";
+import { useHistory } from "react-router";
+import "./ServiceCard.css";
 
-const ServiceCard = ({service}) => {
-    const history = useHistory();
-    
+const ServiceCard = ({ service }) => {
+  const history = useHistory();
 
-    const {title,desc,img,_id} = service;
+  const { title, desc, img, _id } = service;
 
-    const handleServiceDetail = () => {
-        history.push(`/bookingService/${_id}`)
-    }
+  const handleServiceDetail = () => {
+    history.push(`/bookingService/${_id}`);
+  };
 
-    return (
-        <>
-            <Card className="card-container">
-    <Card.Img variant="top" src={img} />
-    
-    <Card.Body>
-      <Card.Title>{title}</Card.Title>
-      <Card.Text>
-        {desc}
-      </Card.Text>
-    </Card.Body>
-        <button onClick={handleServiceDetail} className="btn book-btn text-right">Book Now</button>
-    
-  </Card>
-        </>
-    );
+  return (
+    <>
+     
+       <div className="col-md-4">
+       <CardGroup>
+       <Card className="card-container mb-3">
+        <div className="img-parent">
+          <Card.Img variant="top" src={img} />
+        </div>
+
+        <Card.Body>
+          <Card.Title>{title}</Card.Title>
+          <Card.Text>{desc.slice(0,205)}</Card.Text>
+        </Card.Body>
+        <button
+          onClick={handleServiceDetail}
+          className="btn book-btn text-right"
+        >
+          Book Now
+        </button>
+      </Card>
+      </CardGroup>
+       </div>
+ 
+    </>
+  );
 };
 
 export default ServiceCard;

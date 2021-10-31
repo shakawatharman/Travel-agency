@@ -1,24 +1,20 @@
-import React from "react";
+import React from 'react';
 import useOrders from '../../Hooks/useOrders';
-import useAuth from '../../Hooks/useAuth';
 
-const MyService = () => {
-    const {user} = useAuth();
-
-    const {email} = user;
-
+const ManageAllOrders = () => {
+    
     const [orders] = useOrders()
 console.log(orders)
   return (
     <div>
       <div className="container my-5">
         <div className="row">
-            <h1 className="text-center"> My Orders</h1>
-        <div class="col-md-12 theme-bg p-5">
-                    <div class="volenteer-list bg-white rounded p-4">
-                        <table class="table table-borderless">
+            <h1 className="text-center">Manage All Orders</h1>
+        <div className="col-md-12 theme-bg p-5">
+                    <div className="volenteer-list bg-white rounded p-4">
+                        <table className="table table-borderless">
                             <thead>
-                                <tr class="theme-bg rounded">
+                                <tr className="theme-bg rounded">
                                     <th scope="col">Destination</th>
                                     <th scope="col">Date</th>
                                     <th scope="col">Client Name</th>
@@ -28,14 +24,14 @@ console.log(orders)
                             </thead>
                             <tbody>
                                 {
-                                    orders.filter(order=>order.email==email).map(order=>
+                                    orders.map(order=>
                                         <tr>
                       
                                         <td>{order.destination}</td>
                                         <td>{order.date}</td>
                                         <td>{order.name}</td>
                                         <td>{order.email}</td>
-                                        <td class="btn btn-warning">{order.status}</td>
+                                        <td className="btn btn-warning">PENDING</td>
                                     </tr>
                                         )
                                 }
@@ -51,4 +47,4 @@ console.log(orders)
   );
 };
 
-export default MyService;
+export default ManageAllOrders;

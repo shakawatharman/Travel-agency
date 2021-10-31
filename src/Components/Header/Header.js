@@ -10,17 +10,20 @@ const Header = () => {
   const {user,logOut} = useAuth()
 
   return (
-    <Navbar collapseOnSelect expand="lg" bg="info" variant="dark">
+    <Navbar className="nav-menu" collapseOnSelect expand="lg" variant="dark">
   <Container>
   <Navbar.Brand href="#home"><img src="https://www.tour-planners.com/images/logo.png" alt="" /></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ms-auto">
       <Nav.Link as={Link} className="text-dark fw-bold" to="/home">Home</Nav.Link>
-      <Nav.Link as={Link} className="text-dark fw-bold" to="/manageservice">Manage all services</Nav.Link>
-      <Nav.Link as={Link} className="text-dark fw-bold" to="/myservices">My services</Nav.Link>
+      <Nav.Link as={Link} className="text-dark fw-bold" to="/destination">Explore</Nav.Link>
+      <Nav.Link as={Link} className="text-dark fw-bold" to="/manageAllOrders">Manage All Orders</Nav.Link>
+      
       {user?.email ? (
                <>
+              <Nav.Link as={Link} className="text-dark fw-bold" to="/myservices">My Orders</Nav.Link>
+              
                 <Button  className="text-danger fw-bold" onClick={logOut} variant="light">
                   Logout
                 </Button>
@@ -28,7 +31,7 @@ const Header = () => {
                </>
 
               ) : (
-                <Nav.Link className="text-white fw-bold border" as={Link} to="/login">
+                <Nav.Link className="text-danger fw-bold border" as={Link} to="/login">
                   Login
                 </Nav.Link>
               )}

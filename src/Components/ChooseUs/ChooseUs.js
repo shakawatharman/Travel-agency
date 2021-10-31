@@ -6,7 +6,7 @@ const ChooseUs = () => {
         <div className="my-5">
            <div className="container">
                <div className="row">
-                   <div className="col-md-6">
+                   <div className="col-md-6 ">
                        <img src="https://image.freepik.com/free-vector/pensive-businessman-making-decision_74855-5283.jpg" alt="" />
                    </div>
                    <div className="col-md-6">

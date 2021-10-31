@@ -5,7 +5,7 @@ const Destination = () => {
   return (
     <div className="my-5">
       <h1 className="text-center mb-1">Travel Destinations</h1>
-      <p className="text-center mb-5">Choose your favorite place and make plan with us...</p>
+      <p className="text-center mb-5">Choose your favorite place and do plan with us...</p>
 
 <div className="container">
     <div className="row">

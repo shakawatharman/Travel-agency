@@ -20,7 +20,7 @@ const AddService = () => {
         }
         console.log(event)
 
-        fetch("http://localhost:5000/events",{
+        fetch("https://ghoulish-beast-08902.herokuapp.com/events",{
             method:"POST",
             headers: {
                 "content-type":"application/json"

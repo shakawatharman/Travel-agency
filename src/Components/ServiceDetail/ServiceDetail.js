@@ -1,17 +1,25 @@
 import React from 'react';
+import useService from '../../Hooks/useService';
 
 const ServiceDetail = ({serviceId}) => {
+
+    const [services] = useService();
+
+
     return (
         <div>
-            <h2>{serviceId}</h2>
-            <h5 className="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-            <p className="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, eveniet! Error ratione blanditiis maxime? Deserunt facilis dolorem corporis aliquid sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia!</p> <br/> <br/>
-          
-            <h5 className="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-            <p className="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, eveniet! Error ratione blanditiis maxime? Deserunt facilis dolorem corporis aliquid sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia!</p> <br/> <br/>
-          
-          <h5 className="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-          <p className="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, eveniet! Error ratione blanditiis maxime? Deserunt facilis dolorem corporis aliquid sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, mollitia!</p>
+            
+           
+        {
+            services.filter(service=>service._id==serviceId).map(service=>
+                 <>
+                 <h2>{service.title}</h2>
+                 <img className="img-fluid rounded shadow my-5" src={service.img} alt="" />
+                 <p>{service.desc}</p>
+                 </>
+            )
+        }
+
         </div>
     );
 };

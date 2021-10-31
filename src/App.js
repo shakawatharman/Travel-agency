@@ -6,10 +6,12 @@ import Login from "./Pages/Login/Login";
 import Service from "./Pages/Service/Service";
 import NotFound from "./Pages/NotFound/NotFound";
 import Header from "./Components/Header/Header";
-import ManageService from "./Components/ManageService/ManageService";
+import Footer from "./Components/Footer/Footer";
+import ManageAllOrders from "./Components/ManageAllOrders/ManageAllOrders";
 import MyService from "./Components/MyService/MyService";
 import AuthProvider  from "./Context/AuthProvider";
-import Footer from "./Components/Footer/Footer";
+import Destination from "./Components/Destination/Destination";
+import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 
 
 function App() {
@@ -29,16 +31,20 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
-          <Route path='/manageservice'>
-            <ManageService></ManageService>
+          <Route path='/manageAllOrders'>
+            <ManageAllOrders></ManageAllOrders>
           </Route>
-          <Route path='/bookingService/:serviceId'>
+          <PrivateRoute path='/bookingService/:serviceId'>
           <Service></Service>
+          </PrivateRoute>
+          <Route path="/destination">
+            <Destination></Destination>
           </Route>
           <Route path='/myservices'>
             <MyService></MyService>
           </Route>
-          <Route>
+          
+          <Route path='*'>
             <NotFound></NotFound>
           </Route>
         </Switch>
