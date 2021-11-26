@@ -26,7 +26,7 @@ const ServiceCard = ({ service }) => {
           <Card.Title>{title}</Card.Title>
          
           <Card.Text>{desc.slice(0,205)}</Card.Text>
-          <h2>{price}</h2>
+          <h2>${price}</h2>
         </Card.Body>
         <button
           onClick={handleServiceDetail}

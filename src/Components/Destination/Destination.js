@@ -1,5 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import './Destination.css';
 
 const Destination = () => {
   return (
@@ -8,9 +9,9 @@ const Destination = () => {
       <p className="text-center mb-5">Choose your favorite place and do plan with us...</p>
 
 <div className="container">
-    <div className="row">
+    <div className="row destination-image">
     <Card className="p-0 col-md-6">
-  <Card.Img src="https://wallpaperaccess.com/full/4287258.jpg" alt="Card image" />
+  <Card.Img src="https://i.ibb.co/QcH3dHJ/maldives-featured-720x560.jpg" alt="Card image" />
   <Card.ImgOverlay>
     
   <Card.Title> <span className="text-dark fw-bold h2">Maldives</span></Card.Title>
@@ -19,16 +20,16 @@ const Destination = () => {
 </Card>
 
 <Card className="p-0 col-md-6">
-  <Card.Img src="https://wallpapercave.com/wp/wp1991255.jpg" alt="Card image" />
+  <Card.Img src="https://i.ibb.co/w7k1qwC/penida1.jpg" alt="Card image" />
   <Card.ImgOverlay>
     
-  <Card.Title> <span className="text-dark fw-bold h2">Vutan</span></Card.Title>
+  <Card.Title> <span className="text-dark fw-bold h2">Indonesia</span></Card.Title>
    
   </Card.ImgOverlay>
 </Card>
 
 <Card className="p-0 col-md-6">
-  <Card.Img src="https://i.pinimg.com/originals/72/96/04/72960416bccb45f76ef2400b634e7c01.jpg" alt="Card image" />
+  <Card.Img src="https://i.ibb.co/5vbh4YC/Annapurna-Base-Camp-Trek.jpg" alt="Card image" />
   <Card.ImgOverlay>
     
   <Card.Title> <span className="text-dark fw-bold h2">Nepal</span></Card.Title>
@@ -38,7 +39,7 @@ const Destination = () => {
 
 
 <Card className="p-0 col-md-6">
-  <Card.Img src="https://media.istockphoto.com/photos/elephants-in-river-picture-id505221662?b=1&k=20&m=505221662&s=170667a&w=0&h=OameoaUMhnOc5gz98iIAmGpj1Xd7lAoA99ROg6OzY7U="/>
+  <Card.Img src="https://i.ibb.co/rFdN8FW/Herd-of-elephants-walking-in-a-jungle-river.jpg"/>
   <Card.ImgOverlay>
     
   <Card.Title> <span className="text-dark fw-bold h2">Srilanka</span></Card.Title>
@@ -48,7 +49,7 @@ const Destination = () => {
 </Card>
 
 <Card className="p-0 col-md-6">
-  <Card.Img src="https://images.unsplash.com/photo-1548013146-72479768bada?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aW5kaWF8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"/>
+  <Card.Img src="https://i.ibb.co/YQJCXCQ/photo-1548013146-72479768bada-ixid-Mnwx-Mj-A3f-DB8-MHxz-ZWFy-Y2h8-NHx8a-W5ka-WF8-ZW58-MHx8-MHx8-ixli.jpg"/>
   <Card.ImgOverlay>
     
   <Card.Title> <span className="text-dark fw-bold h2">India</span></Card.Title>
@@ -57,7 +58,7 @@ const Destination = () => {
 
 </Card>
 <Card className="p-0 col-md-6">
-  <Card.Img src="https://c4.wallpaperflare.com/wallpaper/762/723/695/the-sky-mountains-lake-lake-saif-ul-malook-wallpaper-preview.jpg"/>
+  <Card.Img src="https://i.ibb.co/8BxKVDD/the-sky-mountains-lake-lake-saif-ul-malook-wallpaper-preview.jpg"/>
   <Card.ImgOverlay>
     
   <Card.Title> <span className="text-dark fw-bold h2">Pakistan</span></Card.Title>

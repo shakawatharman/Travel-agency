@@ -40,7 +40,7 @@ const BookingForm = ({serviceId}) => {
             if(data.insertedId){
                 alert('order successfully added')
                 e.target.reset();
-            }
+            } 
         })
         
     }

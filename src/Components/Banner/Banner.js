@@ -9,7 +9,7 @@ const Banner = () => {
         <Carousel.Item interval={2000}>
           <img
             className="d-block w-100"
-            src="https://tourpress.b-cdn.net/wp-content/uploads/2017/11/sydney-slider-img-1.jpg"
+            src="https://i.ibb.co/ssZH93R/sydney-slider-img-1.jpg"
             alt="First slide"
           />
           <Carousel.Caption>
@@ -19,7 +19,7 @@ const Banner = () => {
         <Carousel.Item interval={500}>
           <img
             className="d-block w-100"
-            src="https://tourpress.b-cdn.net/wp-content/uploads/2017/11/maldives-slider-img-1.jpg"
+            src="https://i.ibb.co/PNpVZG0/maldives-slider-img-1.jpg"
             alt="Second slide"
           />
           <Carousel.Caption>
@@ -29,7 +29,7 @@ const Banner = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://tourpress.b-cdn.net/wp-content/uploads/2017/11/dubai-slider-screen-1.jpg"
+            src="https://i.ibb.co/X3zKmnV/dubai-slider-screen-1.jpg"
             alt="Third slide"
           />
           <Carousel.Caption>

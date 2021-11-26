@@ -12,7 +12,7 @@ const Footer = () => {
 				<div className="col-md-5 mb-4">
 					<h3 className="footer-title"></h3>
 					<div className="footer-logo mb-4  text-start">
-						<img className="img-fluid" src="https://www.tour-planners.com/images/logo.png" alt="" />
+						<img className="img-fluid" src="https://i.ibb.co/9HD59d8/logo.png" alt="" />
 					</div>
 					<div className="footer-meta  text-start">
 						<p>We are offering you the best trip. Feel free to contact us to book your trip with your lovely family.</p>
@@ -31,9 +31,9 @@ const Footer = () => {
 				<div className="col-md-3 mb-4">
 					<h3 className="footer-title text-start">Contact Us</h3>
 					<div className="contact-info text-start">
-						<p>Phone : +88 018 1932015</p>
-						<p>Email : Travel.agency@gmail.com</p>
-						<p>Address : Chittagong,Bangladesh</p>
+						<p>Phone : +88 018 14183740</p>
+						<p>Email : tour.planners@gmail.com</p>
+						<p>Address : Chattogram, Bangladesh</p>
 					</div>
 				</div>
 			</div>
@@ -42,7 +42,7 @@ const Footer = () => {
 			<div className="container p-2">
 				<div className="row justify-content-center">
 					
-					<p className="text-white">© All Rights Reserved by Travel Agency || 2022</p>
+					<p className="text-white">© All Rights Reserved by Tour Planners || 2022</p>
 				</div>
 			</div>
 		</div>
